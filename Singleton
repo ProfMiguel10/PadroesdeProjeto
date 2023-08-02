@@ -1,0 +1,19 @@
+package singleton;
+
+public class ClasseA {
+
+	// única instância da classe
+	private static ClasseA ins;
+
+	// Construtor privado
+	private ClasseA() {
+	}
+
+	// ponto de acesso global
+	public static ClasseA getInstancia() {
+		if (ins == null) {
+			ins = new ClasseA();
+		}
+		return ins;
+	}
+}
