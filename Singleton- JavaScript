@@ -1,0 +1,18 @@
+const A = (function () {
+  // Única Instância
+  let ins;
+
+  // Construtor Privado
+  function A() {
+    
+  }
+  // Ponto de Acesso Global
+  return {
+    getInstancia: function () {
+      if (!ins) {
+        ins = new A();
+      }
+      return ins;
+    },
+  };
+})();
