@@ -1,0 +1,28 @@
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class ImplArrayList {
+	public static void main(String[] args) {
+
+		LinkedList<String> lista = new LinkedList<String>();
+		lista.add("Igor");
+		lista.add("Diogo");
+		lista.add("André");
+		lista.add("Alexandre");
+		lista.add("Pellon");
+		lista.add("Daniel");
+		lista.add("Custódio");
+		lista.add("Mirela");
+		lista.add("Amanda");
+		lista.add("Gabriel");
+		lista.add("Iolanda");
+        Collections.sort(lista);
+		Iterator<String> it = lista.iterator();
+
+		while (it.hasNext()) {
+			String aux = (String) it.next();
+			System.out.println(aux);
+		}
+	}
+}
