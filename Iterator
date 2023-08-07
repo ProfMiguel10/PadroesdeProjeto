@@ -2,7 +2,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class ImplArrayList {
+public class ImplLinkedList {
 	public static void main(String[] args) {
 
 		LinkedList<String> lista = new LinkedList<String>();
